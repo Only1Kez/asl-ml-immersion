@@ -1,0 +1,48 @@
+======================================
+ WRAPPER CLASS DEMONSTRATION
+======================================
+Integer wrapper value:   1937
+Double wrapper value:    21700.0
+Character wrapper value: c
+Unboxed back to int:     1937
+Integer.compare(2023, 1937) = 1
+
+======================================
+ OBJECT CREATION
+======================================
+Automobile [year=1900, price=500.0, slogan="Generic Motors Co.", type=g]
+Toyota [year=1937, price=0.0, slogan="Let's Go Places", type=n]
+Corolla [year=2023, price=21700.0, slogan="Let's Go Places", type=c]
+Tundra [year=2023, price=38965.0, slogan="Let's Go Places", type=t]
+Highlander [year=2023, price=36620.0, slogan="Let's Go Places", type=s]
+
+======================================
+ DYNAMIC BINDING (runtime polymorphism)
+======================================
+Each object is stored as an Automobile reference; sound() still
+resolves to the actual runtime type's override:
+Automobile sound: Vroom!
+Toyota sound: Reliable engine hum.
+Corolla sound: Quiet, efficient purr.
+Tundra sound: Deep, roaring V8 rumble.
+Highlander sound: Smooth, confident growl.
+
+======================================
+ STATIC BINDING (compile-time resolution)
+======================================
+Static (declared) type: Automobile
+Runtime (actual) type:  Corolla
+refAsAutomobile.getYear()   -> 2023
+refAsAutomobile.getSlogan() -> Let's Go Places
+
+======================================
+ METHOD UNIQUE TO COROLLA
+======================================
+Corolla fuel economy: up to 35 city / 41 highway MPG.
+
+======================================
+ NESTED CLASS: Highlander.ThirdRowSeating
+======================================
+Highlander configured with 8 total seats (8-seat third row).
+Highlander configured with 7 total seats (7-seat third row).
+After reconfiguring: Highlander configured with 7 total seats (7-seat third row).
